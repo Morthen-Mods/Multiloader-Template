@@ -1,0 +1,25 @@
+--------------------------------------------------------------------------------
+
+Command-Line:
+ - C:\Program Files\Eclipse Adoptium\jdk-25.0.3.9-hotspot\bin\java.exe
+ - -jar
+ - D:\.gradle\caches\modules-2\files-2.1\net.neoforged.installertools\installertools\4.0.16\a1c5664a32c3ada2a94870f81d446d27788a488c\installertools-4.0.16-fatjar.jar
+ - --task
+ - PROCESS_MINECRAFT_JAR
+ - --input
+ - D:\.gradle\caches\neoformruntime\artifacts\minecraft_26.1-pre-3_client.jar
+ - --input
+ - D:\.gradle\caches\neoformruntime\artifacts\minecraft_26.1-pre-3_server.jar
+ - --output
+ - ./output.jar
+ - --no-mod-manifest
+--------------------------------------------------------------------------------
+
+Task: PROCESS_MINECRAFT_JAR
+Using common thread-pool with parallelism 23
+load minecraft_26.1-pre-3_server.jar [346ms]
+load minecraft_26.1-pre-3_client.jar [357ms]
+Merged 29433 entries (13792 client-only, 0 server-only)
+merge jars [210ms]
+write output file [1146ms]
+overall work [1732ms]
