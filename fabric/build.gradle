@@ -23,25 +23,25 @@ loom {
     runs {
         client {
             client()
-            setConfigName("Fabric Client")
-            ideConfigGenerated(true)
-            programArgs('--username', 'Dev')
-            runDir("../common/runs/client")
+            setDisplayName("Fabric Client")
+            setGenerateRunConfig(true)
+            setProgramArguments(['--username', 'Dev'])
+            setRunDirectory(file('../common/runs/client'))
         }
         // Remove if testmod isn't needed
         testClient {
             client()
             source sourceSets.testmod
-            setConfigName("Fabric Test Client")
-            ideConfigGenerated(true)
-            programArgs('--username', 'Dev')
-            runDir("../common/runs/client")
+            setDisplayName("Fabric Test Client")
+            setGenerateRunConfig(true)
+            setProgramArguments(['--username', 'Dev'])
+            setRunDirectory(file('../common/runs/client'))
         }
         server {
             server()
-            setConfigName("Fabric Server")
-            ideConfigGenerated(true)
-            runDir("../common/runs/server")
+            setDisplayName("Fabric Server")
+            setGenerateRunConfig(true)
+            setRunDirectory(file('../common/runs/server'))
         }
     }
 }
