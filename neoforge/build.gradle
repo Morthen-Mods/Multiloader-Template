@@ -24,8 +24,6 @@ neoForge {
         }
         client {
             client()
-            // Remove if testmod isn't needed
-            sourceSet = sourceSets.testmod
         }
         server {
             server()
