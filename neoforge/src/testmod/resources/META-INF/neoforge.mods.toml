@@ -1,0 +1,11 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+license = "MIT"
+
+[[mods]]
+    modId = "${mod_id}_test"
+    version = "1.0-TEST"
+    displayName = "${mod_name} Testmod"
+    authors = "${mod_author}"
+    description = "Simple Testmod"
+    logoFile = "icon_forge.png"

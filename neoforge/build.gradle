@@ -3,6 +3,13 @@ plugins {
     id 'net.neoforged.moddev'
 }
 
+def common = project(':common')
+dependencies {
+    // Remove if testmod isn't needed
+    testmodImplementation sourceSets.main.output
+    testmodImplementation common.sourceSets.testmod.output
+}
+
 neoForge {
     version = neoforge
 
@@ -17,6 +24,8 @@ neoForge {
         }
         client {
             client()
+            // Remove if testmod isn't needed
+            sourceSet = sourceSets.testmod
         }
         server {
             server()
@@ -25,7 +34,18 @@ neoForge {
     }
     mods {
         "${mod_id}" { sourceSet sourceSets.main }
+        // Remove if testmod isn't needed
+        "${mod_id}_test" { sourceSet sourceSets.testmod }
     }
+}
+
+// Remove if testmod isn't needed
+compileTestmodJava {
+    source(project(':common').sourceSets.testmod.allSource)
+}
+
+processTestmodResources {
+    from file('../common/src/testmod/resources')
 }
 
 publishMods {

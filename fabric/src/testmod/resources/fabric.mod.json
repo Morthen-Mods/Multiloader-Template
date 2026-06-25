@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "${mod_id}_test",
+  "version": "1.0-TEST",
+  "name": "${mod_name} Test",
+  "description": "Testmod",
+  "authors": [ "Morthen" ],
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [ "net.morthen.example_test.ExampleTest" ]
+  }
+}

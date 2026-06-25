@@ -10,9 +10,14 @@ repositories {
     mavenCentral()
 }
 
+def common = project(':common')
 dependencies {
     implementation minecraft.dependency("net.minecraftforge:forge:${minecraft_version}-${forge}")
     annotationProcessor "org.spongepowered:mixin:${mixin_version}:processor"
+
+    // Remove if testmod isn't needed
+    testImplementation sourceSets.main.output
+    testCompileOnly common.sourceSets.testmod.output
 }
 
 minecraft {
@@ -33,6 +38,19 @@ minecraft {
         }
     }
 }
+// Remove if testmod isn't needed
+test {
+    // needed so that the build task works, is a dirty fix
+    failOnNoDiscoveredTests = false
+}
+
+compileTestJava {
+    source(project(':common').sourceSets.testmod.allSource)
+}
+
+processTestResources {
+    from project(':common').sourceSets.testmod.resources
+}
 
 tasks.named('jar', Jar) {
     manifest {
@@ -45,4 +63,9 @@ sourceSets.each {
     def dir = layout.buildDirectory.dir("sourcesSets/$it.name")
     it.output.resourcesDir = dir
     it.java.destinationDirectory = dir
+}
+
+publishMods {
+    file = jar.archiveFile
+    modLoaders.addAll("forge")
 }

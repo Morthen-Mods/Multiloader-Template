@@ -14,4 +14,6 @@ dependencies {
     compileOnly "org.spongepowered:mixin:${mixin_version}"
     compileOnly "io.github.llamalad7:mixinextras-common:${mixin_extras}"
     annotationProcessor "io.github.llamalad7:mixinextras-common:${mixin_extras}"
+
+    testmodCompileOnly sourceSets.main.output
 }

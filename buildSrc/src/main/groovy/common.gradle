@@ -19,6 +19,14 @@ idea.module {
     downloadSources = true
 }
 
+// Remove if testmod isn't needed
+sourceSets {
+    testmod {
+        runtimeClasspath += sourceSets.main.runtimeClasspath
+        compileClasspath += sourceSets.main.compileClasspath
+    }
+}
+
 repositories {
     mavenCentral()
     mavenLocal()
@@ -60,7 +68,7 @@ sourcesJar {
     }
 }
 
-processResources {
+tasks.withType(ProcessResources).configureEach {
     var expandProps = [
             // Project related Keys
             "version": version,

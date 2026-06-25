@@ -3,6 +3,7 @@ plugins {
     id 'net.fabricmc.fabric-loom'
 }
 
+def common = project(":common")
 dependencies {
     minecraft "com.mojang:minecraft:${minecraft_version}"
 
@@ -10,6 +11,9 @@ dependencies {
     implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api}+${minecraft_version}"
 
     implementation "com.terraformersmc:modmenu:${mod_menu}"
+
+    // Remove if testmod isn't needed
+    testmodImplementation common.sourceSets.testmod.output
 }
 
 loom {
@@ -24,6 +28,15 @@ loom {
             programArgs('--username', 'Dev')
             runDir("../common/runs/client")
         }
+        // Remove if testmod isn't needed
+        testClient {
+            client()
+            source sourceSets.testmod
+            setConfigName("Fabric Test Client")
+            ideConfigGenerated(true)
+            programArgs('--username', 'Dev')
+            runDir("../common/runs/client")
+        }
         server {
             server()
             setConfigName("Fabric Server")
@@ -31,6 +44,11 @@ loom {
             runDir("../common/runs/server")
         }
     }
+}
+
+// Remove if testmod isn't needed
+processTestmodResources {
+    from file('../common/src/testmod/resources')
 }
 
 publishMods {
