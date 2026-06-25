@@ -12,7 +12,7 @@ repositories {
 
 dependencies {
     implementation minecraft.dependency("net.minecraftforge:forge:${minecraft_version}-${forge}")
-    annotationProcessor 'org.spongepowered:mixin:0.8.7:processor'
+    annotationProcessor "org.spongepowered:mixin:${mixin_version}:processor"
 }
 
 minecraft {
