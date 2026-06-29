@@ -1,8 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "net.xstopho.example.mixin",
-  "refmap": "${mod_id}.refmap.json",
+  "package": "net.morthen.example.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [],
   "client": [],

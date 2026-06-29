@@ -6,19 +6,15 @@
   "description": "${mod_description}",
   "authors": [ "${mod_author}" ],
   "contact": {
-    "homepage": "https://github.com/Stein-N/Resource-Backpacks",
-    "issues": "https://github.com/Stein-N/Resource-Backpacks/issues"
+    "homepage": "https://github.com/Morthen-Mods/Multiloader-Template",
+    "issues": "https://github.com/Morthen-Mods/Multiloader-Template/issues"
   },
   "license": "${mod_license}",
   "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
-    "main": [
-      "net.morthen.example.Example"
-    ],
-    "client": [
-      "net.morthen.example.ExampleClient"
-    ]
+    "main": [ "net.morthen.example.Example" ],
+    "client": [ "net.morthen.example.ExampleClient" ]
   },
   "mixins": [ "${mod_id}.mixins.json" ],
   "depends": {

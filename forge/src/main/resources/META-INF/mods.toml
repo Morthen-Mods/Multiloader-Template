@@ -14,12 +14,12 @@ license="${mod_license}"
     modId = "forge"
     mandatory = true
     versionRange = "[${forge},)"
-    ordering = "NONE"
+    ordering = "BEFORE"
     side = "BOTH"
 
 [[dependencies.${mod_id}]]
     modId = "minecraft"
     mandatory = true
     versionRange = "[${minecraft_version},)"
-    ordering = "NONE"
+    ordering = "BEFORE"
     side = "BOTH"
