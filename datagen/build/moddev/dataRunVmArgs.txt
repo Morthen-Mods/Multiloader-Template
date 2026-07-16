@@ -4,5 +4,5 @@
 java.base/java.lang.invoke=ALL-UNNAMED
 --add-exports
 jdk.naming.dns/com.sun.jndi.dns=java.naming
-"-Dlog4j2.configurationFile=D:\\Minecraft Mods\\Multiloader-Template\\datagen\\build\\moddev\\dataLog4j2.xml"
+"-Dlog4j2.configurationFile=D:\\Minecraft Mods\\testing\\Multiloader-Template\\datagen\\build\\moddev\\dataLog4j2.xml"
 -Djava.net.preferIPv6Addresses=system

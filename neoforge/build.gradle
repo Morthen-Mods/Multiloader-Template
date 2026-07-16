@@ -27,8 +27,3 @@ neoForge {
         "${mod_id}" { sourceSet sourceSets.main }
     }
 }
-
-publishMods {
-    file = jar.archiveFile
-    modLoaders.addAll("neoforge")
-}

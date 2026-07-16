@@ -32,8 +32,3 @@ loom {
         }
     }
 }
-
-publishMods {
-    file = jar.archiveFile
-    modLoaders.addAll("fabric", "quilt")
-}

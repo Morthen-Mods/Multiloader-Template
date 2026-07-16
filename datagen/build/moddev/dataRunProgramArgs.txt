@@ -12,6 +12,6 @@ D:\\.gradle\\caches\\neoformruntime\\assets
 example
 --all
 --output
-"D:\\Minecraft Mods\\Multiloader-Template\\common\\src\\generated"
+"D:\\Minecraft Mods\\testing\\Multiloader-Template\\common\\src\\generated"
 --existing
-"D:\\Minecraft Mods\\Multiloader-Template\\common\\src\\main\\resources"
+"D:\\Minecraft Mods\\testing\\Multiloader-Template\\common\\src\\main\\resources"
