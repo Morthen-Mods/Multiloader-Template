@@ -14,16 +14,11 @@ neoForge {
             ideName = "NeoForge ${it.name.capitalize()} (${project.path})"
             gameDirectory = file("../common/runs/${it.name.toLowerCase()}")
         }
-        client {
-            client()
-        }
-        server {
-            server()
-            programArguments.add('nogui')
-        }
-        gameTestServer {
-            type = "gameTestServer"
-            systemProperty('neoforge.enableGameTest', 'true')
+        data {
+            clientData()
+            ideName = "Common Datagen"
+            gameDirectory = file('../common/runs/data')
+            programArguments = ['--mod', project.mod_id, '--all', '--output', file('../common/src/generated/').getAbsolutePath(), '--existing', file('../common/src/main/resources/').getAbsolutePath()]
         }
     }
     mods {
@@ -33,7 +28,7 @@ neoForge {
     }
 }
 
-sourceSets.main.resources { srcDir '../common/src/generated' }
+sourceSets.main.resources { srcDir '../common/src/generated/resources' }
 
 // Implement mcgradleconventions loader attribute
 def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)

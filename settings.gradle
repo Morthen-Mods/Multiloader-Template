@@ -24,6 +24,7 @@ plugins {
 rootProject.name = 'Multiloader-Template'
 includeBuild('build-logic')
 include('common')
+include('datagen')
 include('fabric')
 include('forge')
 include('neoforge')

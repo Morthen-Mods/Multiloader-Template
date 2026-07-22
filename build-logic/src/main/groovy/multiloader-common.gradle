@@ -19,6 +19,10 @@ tasks.withType(Jar).configureEach {
     }
 }
 
+tasks.named('javadoc', Javadoc) {
+    options.addStringOption('Xdoclint:none', '-quiet')
+}
+
 jar {
     manifest {
         attributes([

@@ -15,15 +15,15 @@ loom {
     runs {
         client {
             client()
-            setConfigName('Fabric Client')
-            ideConfigGenerated(true)
-            runDir('../common/runs/client')
+            setDisplayName('Fabric Client')
+            setGenerateRunConfig(true)
+            setRunDirectory(file('../common/runs/client'))
         }
         server {
             server()
-            setConfigName('Fabric Server')
-            ideConfigGenerated(true)
-            runDir('../common/runs/server')
+            setDisplayName('Fabric Server')
+            setGenerateRunConfig(true)
+            setRunDirectory(file('../common/runs/server'))
         }
     }
 }
@@ -32,9 +32,11 @@ fabricApi {
     configureTests {
         createSourceSet = true
         modId = mod_id
-        eula = true // agrees to the Minecraft EULA
+        eula = true
     }
 }
+
+sourceSets.main.resources { srcDir '../common/src/generated' }
 
 // Implement mcgradleconventions loader attribute
 def loaderAttribute = Attribute.of('io.github.mcgradleconventions.loader', String)
