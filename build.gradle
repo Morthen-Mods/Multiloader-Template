@@ -1,8 +1,6 @@
 plugins {
-    id 'idea'
-    id 'java-library'
-    id 'net.fabricmc.fabric-loom' version "${fabric_loom}" apply false
-    id 'net.minecraftforge.gradle' version "[${forge_gradle},8.0)" apply false
-    id 'net.neoforged.moddev' version "${moddev_gradle}" apply false
-    id 'me.modmuss50.mod-publish-plugin' version "${mod_publish}" apply false
+    // see https://fabricmc.net/develop/ for new versions
+    id 'net.fabricmc.fabric-loom' version '1.15.5' apply false
+    // see https://projects.neoforged.net/neoforged/moddevgradle for new versions
+    id 'net.neoforged.moddev' version '2.0.141' apply false
 }

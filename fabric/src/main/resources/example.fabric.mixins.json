@@ -5,7 +5,7 @@
   "compatibilityLevel": "JAVA_25",
   "mixins": [],
   "client": [
-    "MixinMinecraft"
+    "MixinTitleScreen"
   ],
   "server": [],
   "injectors": {
@@ -15,4 +15,4 @@
     "requireAnnotations": true
   }
 }
-
+  
