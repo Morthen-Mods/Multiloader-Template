@@ -25,4 +25,5 @@ rootProject.name = 'Multiloader-Template'
 includeBuild('build-logic')
 include('common')
 include('fabric')
+include('forge')
 include('neoforge')

@@ -21,6 +21,10 @@ neoForge {
             server()
             programArguments.add('nogui')
         }
+        gameTestServer {
+            type = "gameTestServer"
+            systemProperty('neoforge.enableGameTest', 'true')
+        }
     }
     mods {
         "${mod_id}" {
