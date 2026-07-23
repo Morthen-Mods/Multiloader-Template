@@ -1,7 +1,7 @@
 package net.morthen.example.platform;
 
-import net.morthen.example.platform.services.IPlatformHelper;
 import net.fabricmc.loader.api.FabricLoader;
+import net.morthen.example.platform.services.IPlatformHelper;
 
 public class FabricPlatformHelper implements IPlatformHelper {
 

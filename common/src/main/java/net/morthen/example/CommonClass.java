@@ -1,8 +1,8 @@
 package net.morthen.example;
 
-import net.morthen.example.platform.Services;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.item.Items;
+import net.morthen.example.platform.Services;
 
 public class CommonClass {
 
