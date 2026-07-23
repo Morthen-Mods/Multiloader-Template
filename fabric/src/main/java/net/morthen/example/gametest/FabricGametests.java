@@ -13,6 +13,11 @@ public class FabricGametests implements CustomTestMethodInvoker {
         CommonGametests.dirtAtOrigin(helper);
     }
 
+    @GameTest
+    public void ironToNuggetsRecipe(GameTestHelper helper) {
+        CommonGametests.ironNuggetRecipe(helper);
+    }
+
     @Override
     public void invokeTestMethod(GameTestHelper helper, Method method) throws ReflectiveOperationException {
         method.invoke(this, helper);

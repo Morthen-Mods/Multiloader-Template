@@ -23,9 +23,12 @@ public class NeoforgeGametests {
     public static final DeferredHolder<Consumer<GameTestHelper>, Consumer<GameTestHelper>> DIRT_AT_ORIGIN =
             GAMETESTS.register("dirt_at_origin", () -> CommonGametests::dirtAtOrigin);
 
+    public static final DeferredHolder<Consumer<GameTestHelper>, Consumer<GameTestHelper>> IRON_NUGGET_RECIPE =
+            GAMETESTS.register("iron_nugget_recipe", () -> CommonGametests::ironNuggetRecipe);
+
     public static void registerGametest(String testName, DeferredHolder<Consumer<GameTestHelper>, Consumer<GameTestHelper>> holder, RegisterGameTestsEvent event) {
         Holder<TestEnvironmentDefinition<?>> env = event.registerEnvironment(
-                Identifier.fromNamespaceAndPath(Constants.MOD_ID, "example_environment"),
+                Identifier.fromNamespaceAndPath(Constants.MOD_ID, testName + "_environment"),
                 new TestEnvironmentDefinition.Weather(TestEnvironmentDefinition.Weather.Type.CLEAR)
         );
 
@@ -41,5 +44,6 @@ public class NeoforgeGametests {
     @SubscribeEvent
     public static void registerGametests(RegisterGameTestsEvent event) {
         registerGametest("dirt_at_origin", DIRT_AT_ORIGIN, event);
+        registerGametest("iron_nugget_recipe", IRON_NUGGET_RECIPE, event);
     }
 }
