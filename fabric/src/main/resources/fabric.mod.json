@@ -13,7 +13,8 @@
     "icon": "${mod_id}.png",
     "environment": "*",
     "entrypoints": {
-        "main": [ "net.morthen.example.ExampleMod" ]
+        "main": [ "net.morthen.example.ExampleMod" ],
+        "fabric-gametest": [ "net.morthen.example.gametest.FabricGametests" ]
     },
     "mixins": [
         "${mod_id}.mixins.json",

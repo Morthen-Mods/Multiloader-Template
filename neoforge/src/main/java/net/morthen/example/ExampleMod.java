@@ -1,6 +1,7 @@
 package net.morthen.example;
 
 
+import net.morthen.example.gametest.NeoforgeGametests;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 
@@ -11,5 +12,7 @@ public class ExampleMod {
         Constants.LOG.info("Hello NeoForge world!");
         CommonClass.init();
 
+        NeoforgeGametests.GAMETESTS.register(eventBus);
+        eventBus.register(NeoforgeGametests.class);
     }
 }

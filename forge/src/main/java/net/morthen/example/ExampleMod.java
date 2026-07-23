@@ -3,6 +3,7 @@ package net.morthen.example;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.morthen.example.gametest.ForgeGametests;
 
 @Mod(Constants.MOD_ID)
 public class ExampleMod {
@@ -13,7 +14,9 @@ public class ExampleMod {
         // project.
 
         // Use NeoForge to bootstrap the Common mod.
-        Constants.LOG.info("Hello NeoForge world!");
+        Constants.LOG.info("Hello Forge world!");
         CommonClass.init();
+
+        ForgeGametests.GAMETESTS.register(context.getModBusGroup());
     }
 }
