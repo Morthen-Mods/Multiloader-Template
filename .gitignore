@@ -21,6 +21,7 @@ build
 # other
 eclipse
 run
+/common/runs/data/*
 /common/runs/client/*
 !/common/runs/client/options.txt
 /common/runs/server/*
