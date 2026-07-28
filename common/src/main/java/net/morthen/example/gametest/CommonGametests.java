@@ -12,8 +12,15 @@ import net.minecraft.world.level.block.Blocks;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
+import java.util.function.BiConsumer;
+import java.util.function.Consumer;
 
 public class CommonGametests {
+
+    public static void init(BiConsumer<String, Consumer<GameTestHelper>> consumer) {
+        consumer.accept("dirt_at_origin", CommonGametests::dirtAtOrigin);
+        consumer.accept("iron_nugget_recipe", CommonGametests::ironNuggetRecipe);
+    }
 
     public static void dirtAtOrigin(GameTestHelper helper) {
         helper.setBlock(0, 0, 0, Blocks.DIRT);

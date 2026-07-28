@@ -14,13 +14,6 @@ neoForge {
             ideName = "NeoForge ${it.name.capitalize()} (${project.path})"
             gameDirectory = file("../common/runs/${it.name.toLowerCase()}")
         }
-        client {
-            client()
-        }
-        server {
-            server()
-            programArguments.add('nogui')
-        }
         gameTestServer {
             type = "gameTestServer"
             systemProperty('neoforge.enableGameTest', 'true')

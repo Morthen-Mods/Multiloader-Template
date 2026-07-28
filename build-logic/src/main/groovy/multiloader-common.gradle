@@ -23,6 +23,12 @@ tasks.named('javadoc', Javadoc) {
     options.addStringOption('Xdoclint:none', '-quiet')
 }
 
+tasks.register("runGameTests") {
+    group = "verification"
+    description = "Runs game tests for all loader"
+    dependsOn(":fabric:runGameTest", ":forge:runGameTestServer", ":neoforge:runGameTestServer")
+}
+
 jar {
     manifest {
         attributes([
