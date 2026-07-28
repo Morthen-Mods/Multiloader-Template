@@ -11,6 +11,21 @@ dependencies {
 loom {
     def aw = project(':common').file("src/main/resources/${mod_id}.accesswidener")
     if (aw.exists()) accessWidenerPath.set(aw)
+
+    runs {
+        client {
+            client()
+            setDisplayName('Fabric Client')
+            setGenerateRunConfig(true)
+            setRunDirectory(file('../common/runs/client'))
+        }
+        server {
+            server()
+            setDisplayName('Fabric Server')
+            setGenerateRunConfig(true)
+            setRunDirectory(file('../common/runs/server'))
+        }
+    }
 }
 
 fabricApi {
