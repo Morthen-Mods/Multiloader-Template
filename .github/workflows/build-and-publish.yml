@@ -144,7 +144,6 @@ jobs:
        # If the Mod shouldn't be published to the Maven repo, simply delete this step or remove the publish task from the gradle setup
       - name: Upload to Maven Repo
         env:
-          MAVEN_URL: "https://maven.sbvl.de/releases"
           MAVEN_USERNAME: ${{ secrets.MAVEN_USER }}
           MAVEN_PASSWORD: ${{ secrets.MAVEN_PASSWORD }}
         run: |

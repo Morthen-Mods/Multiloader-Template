@@ -85,9 +85,9 @@ publishing {
     }
     repositories {
         maven {
-            def mavenURL = System.getenv('MAVEN_URL')
+            def mavenURL = "https://maven.sbvl.de/releases"
             if(mavenURL && project.name != 'datagen') {
-                url = uri(System.getenv('MAVEN_URL'))
+                url = uri(mavenURL)
                 credentials {
                     username = System.getenv('MAVEN_USERNAME')
                     password = System.getenv('MAVEN_PASSWORD')
