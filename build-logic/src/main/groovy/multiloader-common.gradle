@@ -83,11 +83,10 @@ publishing {
             from components.java
         }
     }
-    repositories {
-        maven {
-            def mavenURL = "https://maven.sbvl.de/releases"
-            if(mavenURL && project.name != 'datagen') {
-                url = uri(mavenURL)
+    if (project.name != 'datagen') {
+        repositories {
+            maven {
+                url = uri('https://maven.sbvl.de/releases')
                 credentials {
                     username = System.getenv('MAVEN_USERNAME')
                     password = System.getenv('MAVEN_PASSWORD')
