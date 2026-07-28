@@ -3,8 +3,11 @@
 This project provides a Gradle project template that can compile Minecraft mods for multiple modloaders using a common project for the sources. 
 This Template is based on [Jared's Multiloader Template](https://github.com/jaredlll08/MultiLoader-Template) 
 
-> [!IMPORTANT]
+> [!NOTE]
+> In addition to the original Template it adds forge back and enables gametests for each loader, there are examples on how to implement the bare minimum of gametests.
 > 
+> This also includes a GitHub workflow for automated gametests build and publish to modrinth, curseforge and your maven repository.
+> The workflow gets triggered by adding a tag with `v` at the begining.
 
 ## Getting Started
 
