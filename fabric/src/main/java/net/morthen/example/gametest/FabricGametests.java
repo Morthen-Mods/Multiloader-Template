@@ -14,4 +14,14 @@ public class FabricGametests {
     public void ironToNuggetsRecipe(GameTestHelper helper) {
         CommonGametests.ironNuggetRecipe(helper);
     }
+
+    @GameTest
+    public void checkChickenDrops(GameTestHelper helper) {
+        CommonGametests.checkChickenDrops(helper);
+    }
+
+    @GameTest
+    public void checkChestLoot(GameTestHelper helper) {
+        CommonGametests.checkChestLoot(helper);
+    }
 }

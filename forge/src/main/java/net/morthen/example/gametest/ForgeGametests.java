@@ -10,8 +10,11 @@ import java.util.function.Consumer;
 public class ForgeGametests {
     public static final DeferredRegister<Consumer<GameTestHelper>> GAMETESTS = DeferredRegister.create(Registries.TEST_FUNCTION, Constants.MOD_ID);
 
+    private static void registerTest(String name, Consumer<GameTestHelper> consumer) {
+        GAMETESTS.register(name, () -> consumer);
+    }
+
     static {
-        GAMETESTS.register("dirt_at_origin", () -> CommonGametests::dirtAtOrigin);
-        GAMETESTS.register("iron_nugget_recipe", () -> CommonGametests::ironNuggetRecipe);
+        CommonGametests.init(ForgeGametests::registerTest);
     }
 }
