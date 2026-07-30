@@ -14,7 +14,5 @@ public class ForgeGametests {
         GAMETESTS.register(name, () -> consumer);
     }
 
-    static {
-        CommonGametests.init(ForgeGametests::registerTest);
-    }
+    static { CommonGametests.init(ForgeGametests::registerTest); }
 }
