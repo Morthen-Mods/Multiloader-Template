@@ -16,4 +16,4 @@ plugins {
 
 rootProject.name = "Multiloader-Template"
 
-listOf("common", "datagen", "fabric").forEach(::include)
+listOf("common", "datagen", "fabric", "forge").forEach(::include)

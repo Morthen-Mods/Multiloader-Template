@@ -15,6 +15,7 @@ public class GametestConstants {
     public static void commonInit() {
 
     }
+
     public static void initTests(BiConsumer<String, Consumer<GameTestHelper>> consumer) {
         consumer.accept("dirt_at_origin", TemplateTest::dirtAtOrigin);
     }

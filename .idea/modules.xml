@@ -8,7 +8,12 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/datagen/Multiloader-Template.datagen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/datagen/Multiloader-Template.datagen.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/Multiloader-Template.forge.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/Multiloader-Template.forge.gametest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/Multiloader-Template.forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/Multiloader-Template.forge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/Multiloader-Template.forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/Multiloader-Template.forge.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/Multiloader-Template.forge.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/Multiloader-Template.forge.testmod.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/net.morthen.Multiloader-Template.fabric.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/net.morthen.Multiloader-Template.fabric.gametest.iml" />
     </modules>
   </component>
