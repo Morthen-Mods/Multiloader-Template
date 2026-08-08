@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datagen/Multiloader-Template.datagen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/datagen/Multiloader-Template.datagen.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.gametest.iml" />
     </modules>
   </component>
