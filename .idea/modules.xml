@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datagen/Multiloader-Template.datagen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/datagen/Multiloader-Template.datagen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.testmod.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.gametest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/Multiloader-Template.fabric.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/Multiloader-Template.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/Multiloader-Template.neoforge.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/net.morthen.example.Multiloader-Template.fabric.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/net.morthen.example.Multiloader-Template.fabric.gametest.iml" />
     </modules>
   </component>
 </project>
