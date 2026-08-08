@@ -1,6 +1,7 @@
 package net.morthen.template;
 
 import net.minecraft.resources.Identifier;
+import net.morthen.template.service.Services;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +15,6 @@ public class CommonConstants {
     }
 
     public static void commonInit() {
-
+        LOGGER.info("Hello from {}", Services.PLATFORM.getName());
     }
 }

@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 public class TemplateMod implements ModInitializer {
     @Override
     public void onInitialize() {
-        CommonConstants.LOGGER.info("Loading TemplateMod on Fabric");
+        CommonConstants.commonInit();
+        CommonConstants.LOGGER.info("Loading TemplateMod");
     }
 }
