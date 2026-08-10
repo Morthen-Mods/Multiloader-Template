@@ -5,8 +5,8 @@ plugins {
 multiloader {
     loader = "fabric"
 
-    fabricApiVersion = "0.155.2+26.1.2"
-    fabricLoaderVersion = "0.19.3"
+    fabricApiVersion = providers.gradleProperty("fabric_api")
+    fabricLoaderVersion = providers.gradleProperty("fabric_loader")
 
     withTestMod()
     withGametest()

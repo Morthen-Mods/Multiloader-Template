@@ -3,8 +3,8 @@ plugins {
 }
 
 multiloader {
-    neoForgeVersion = "26.1.2.71"
     loader = "datagen"
+    neoForgeVersion = providers.gradleProperty("neoforge")
 
     applyMetadataReplacements(listOf("pack.mcmeta", "META-INF/neoforge.mods.toml"))
 }
