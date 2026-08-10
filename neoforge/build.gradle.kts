@@ -8,6 +8,7 @@ multiloader {
 
     withTestMod()
     withGametest()
+    withModPublish()
 
     applyMetadataReplacements(listOf("pack.mcmeta", "META-INF/neoforge.mods.toml"), mapOf(
         "neoforge_version" to neoForgeVersion.get(),

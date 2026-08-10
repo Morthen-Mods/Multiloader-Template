@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/01 - Tools.Multiloader-Template.fabric.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/01 - Tools.Multiloader-Template.fabric.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/common/Multiloader-Template.common.testmod.iml" />
@@ -17,7 +18,21 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/Multiloader-Template.neoforge.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/Multiloader-Template.neoforge.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/Multiloader-Template.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/Multiloader-Template.neoforge.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/Multiloader-Template.neoforge.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/Multiloader-Template.neoforge.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.gametest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datagen/net.morthen.Multiloader-Template.datagen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/datagen/net.morthen.Multiloader-Template.datagen.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/net.morthen.Multiloader-Template.fabric.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/net.morthen.Multiloader-Template.fabric.gametest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/net.morthen.Multiloader-Template.fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/net.morthen.Multiloader-Template.fabric.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/net.morthen.Multiloader-Template.fabric.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/net.morthen.Multiloader-Template.fabric.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/net.morthen.Multiloader-Template.fabric.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/net.morthen.Multiloader-Template.fabric.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/net.morthen.Multiloader-Template.forge.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/net.morthen.Multiloader-Template.forge.gametest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/net.morthen.Multiloader-Template.forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/net.morthen.Multiloader-Template.forge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/net.morthen.Multiloader-Template.forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/net.morthen.Multiloader-Template.forge.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/net.morthen.Multiloader-Template.forge.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/net.morthen.Multiloader-Template.forge.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/net.morthen.Multiloader-Template.neoforge.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/net.morthen.Multiloader-Template.neoforge.gametest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/net.morthen.Multiloader-Template.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/net.morthen.Multiloader-Template.neoforge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/net.morthen.Multiloader-Template.neoforge.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/net.morthen.Multiloader-Template.neoforge.testmod.iml" />
     </modules>
   </component>
 </project>

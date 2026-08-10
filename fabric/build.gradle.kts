@@ -10,6 +10,14 @@ multiloader {
 
     withTestMod()
     withGametest()
+    withModPublish {
+        required.set(listOf(
+            "fabric-api"
+        ))
+        optional.set(listOf(
+            "modmenu"
+        ))
+    }
 
     applyMetadataReplacements(listOf("pack.mcmeta", "*.mixins.json", "fabric.mod.json"), mapOf(
         "fabric_api" to fabricApiVersion.get(),
