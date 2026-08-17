@@ -6,6 +6,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.references.ItemIds;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
@@ -59,7 +60,7 @@ public class TemplateProvider {
         @Override
         protected void addTags(HolderLookup.Provider provider) {
             this.tag(ItemTags.LEAVES)
-                    .add(Items.BONE);
+                    .add(ItemIds.BONE);
         }
     }
 }
