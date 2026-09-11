@@ -14,7 +14,7 @@
   "icon": "${mod_id}.png",
   "environment": "*",
   "entrypoints": {
-    "main": [ "net.morthen.template.TemplateMod" ]
+    "main": [ "com.example.example_mod.ExampleModMod" ]
   },
   "mixins": [
     "${mod_id}.mixins.json",

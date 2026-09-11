@@ -9,6 +9,6 @@
   "icon": "${mod_id}.png",
   "environment": "*",
   "entrypoints": {
-    "fabric-gametest": [ "net.morthen.template.gametest.GametestMod" ]
+    "fabric-gametest": [ "com.example.example_mod.gametest.GametestMod" ]
   }
 }
