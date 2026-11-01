@@ -31,7 +31,7 @@ public class GametestMod {
     }
 
     public static void registerTests(RegisterGameTestsEvent event) {
-        Holder<TestEnvironmentDefinition<?>> env = event.registerEnvironment(Identifier.fromNamespaceAndPath(GametestConstants.MOD_ID, "default"));
+        Holder<TestEnvironmentDefinition> env = event.registerEnvironment(Identifier.fromNamespaceAndPath(GametestConstants.MOD_ID, "default"));
 
         for (Map.Entry<String, ResourceKey<Consumer<GameTestHelper>>> entry : TEST_FUNCTION_MAP.entrySet()) {
             event.registerTest(

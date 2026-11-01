@@ -12,6 +12,8 @@ multiloader {
     modifierType = ModifierType.CLASS_TWEAKER
 }
 
-dependencies {
-    implementation("com.terraformersmc:modmenu:18.0.2")
+afterEvaluate {
+    dependencies {
+        "modImplementation"("com.terraformersmc:modmenu:17.0.1")
+    }
 }
