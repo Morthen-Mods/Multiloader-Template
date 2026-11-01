@@ -1,12 +1,11 @@
 package com.example.example_mod.provider;
 
-import net.minecraft.advancements.Advancement;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
+import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
-import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.references.ItemIds;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.ItemTags;
@@ -14,14 +13,14 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 import com.example.example_mod.CommonConstants;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
+import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
 public class ExampleModProvider {
-    // Since 26.3 recipes (and their advancements) are registry entries, registered via RecipeProvider.asBootstrap
     public static class CustomRecipes extends RecipeProvider {
-        public CustomRecipes(BootstrapContext<Recipe<?>> recipes, BootstrapContext<Advancement> advancements) {
-            super(recipes, advancements);
+        protected CustomRecipes(HolderLookup.Provider registries, RecipeOutput output) {
+            super(registries, output);
         }
 
         @Override
@@ -34,6 +33,22 @@ public class ExampleModProvider {
 
         protected ResourceKey<Recipe<?>> path(String path) {
             return ResourceKey.create(Registries.RECIPE, CommonConstants.of(path));
+        }
+
+        public static class Runner extends RecipeProvider.Runner {
+            public Runner(PackOutput packOutput, CompletableFuture<HolderLookup.Provider> registries) {
+                super(packOutput, registries);
+            }
+
+            @Override
+            protected @NonNull RecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
+                return new CustomRecipes(provider, recipeOutput);
+            }
+
+            @Override
+            public @NonNull String getName() {
+                return "Example Mod Recipe Provider";
+            }
         }
     }
 

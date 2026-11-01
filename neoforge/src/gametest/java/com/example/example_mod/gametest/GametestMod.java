@@ -43,6 +43,6 @@ public class GametestMod {
 
     public static void registerTest(String testId, Consumer<GameTestHelper> consumer) {
         DeferredHolder<Consumer<GameTestHelper>, Consumer<GameTestHelper>> test = GAMETEST.register(testId, () -> consumer);
-        TEST_FUNCTION_MAP.putIfAbsent(testId, test.key());
+        TEST_FUNCTION_MAP.putIfAbsent(testId, test.getKey());
     }
 }
