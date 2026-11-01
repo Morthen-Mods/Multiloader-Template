@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "example_mod:diamond"
+        "recipes": "example_mod:diamond"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

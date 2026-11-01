@@ -1,32 +1,17 @@
+import net.morthen.gradle.multiloader.api.Loader
+import net.morthen.gradle.multiloader.api.ModifierType
+
 plugins {
     id("net.morthen.gradle.multiloader")
 }
 
 multiloader {
-    loader = "fabric"
+    loader = Loader.FABRIC
 
-    fabricApiVersion = providers.gradleProperty("fabric_api")
-    fabricLoaderVersion = providers.gradleProperty("fabric_loader")
-
-    withTestMod()
-    withGametest()
-    withModPublish {
-        required.set(listOf(
-            "fabric-api"
-        ))
-        optional.set(listOf(
-            "modmenu"
-        ))
-    }
-
-    applyMetadataReplacements(listOf("pack.mcmeta", "*.mixins.json", "fabric.mod.json"), mapOf(
-        "fabric_api" to fabricApiVersion.get(),
-        "fabric_loader" to fabricLoaderVersion.get(),
-        "sources_url" to providers.gradleProperty("sources_url").get(),
-        "issues_url" to providers.gradleProperty("issues_url").get()
-    ))
+    // example_mod.classtweaker, from common or fabric
+    modifierType = ModifierType.CLASS_TWEAKER
 }
 
 dependencies {
-    implementation("com.terraformersmc:modmenu:20.0.2")
+    implementation("com.terraformersmc:modmenu:21.0.0")
 }

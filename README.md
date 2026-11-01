@@ -2,7 +2,7 @@
 
 This is an example Mod.
 
-Multiloader Minecraft mod for **Fabric, Forge, NeoForge** on Minecraft **26.2**.
+Multiloader Minecraft mod for **Fabric, Forge, NeoForge** on Minecraft **26.3**.
 Generated from the [Multiloader Template](https://github.com/Morthen-Mods/Multiloader-Template), which builds on the [multiloader-gradle-plugin](https://github.com/Morthen-Mods/multiloader-gradle-plugin).
 
 ## Requirements
@@ -43,8 +43,8 @@ Game directories live in `common/runs/`.
 | `:neoforge:runClient` / `:neoforge:runServer` | NeoForge client / server |
 | `:<loader>:runTestmodClient` / `runTestmodServer` | Same, with the `testmod` source set loaded as a second mod |
 | `:fabric:runGameTests` | Run the game tests on Fabric |
-| `:forge:runGameTestServer` | Run the game tests on Forge (generates test instances via `:forge:runData` first) |
-| `:neoforge:runGametestServer` | Run the game tests on NeoForge |
+| `:forge:runGametestGameTestServer` | Run the game tests on Forge (generates test instances via `:forge:runGametestData` first) |
+| `:neoforge:runGameTests` | Run the game tests on NeoForge |
 | `:datagen:runData` | Run data generation; writes into `common/src/generated` |
 
 ## Publishing
@@ -57,7 +57,9 @@ Set the `MODRINTH_API` and/or `CURSEFORGE_API` environment variables (and the ma
 ./gradlew publishMods
 ```
 
-A platform is skipped automatically when its id/token pair is missing. `CHANGELOG.md` is used as the release changelog.
+A platform is used as soon as its `modrinth_id` / `curseforge_id` entry exists in `gradle.properties`,
+so remove the entry of a platform you don't publish to. `CHANGELOG.md` is used as the release changelog.
+Add `-Pmod_publish_dry_run=true` to test the upload without publishing anything.
 
 ## License
 
