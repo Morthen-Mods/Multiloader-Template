@@ -60,7 +60,7 @@ public class ExampleModProvider {
         @Override
         protected void addTags(HolderLookup.Provider provider) {
             this.tag(ItemTags.LEAVES)
-                    .add(ItemIds.BONE);
+                    .add(Items.BONE);
         }
     }
 }

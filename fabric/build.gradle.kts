@@ -13,5 +13,5 @@ multiloader {
 }
 
 dependencies {
-    implementation("com.terraformersmc:modmenu:20.0.3")
+    implementation("com.terraformersmc:modmenu:18.0.2")
 }
