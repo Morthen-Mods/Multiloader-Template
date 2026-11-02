@@ -1,5 +1,5 @@
 plugins {
-    id("net.morthen.gradle.multiloader") version "0.2.2"
+    id("net.morthen.gradle.multiloader") version "0.2.3"
 
     id("net.fabricmc.fabric-loom") version "1.19.3" apply false
     id("net.minecraftforge.gradle") version "7.0.40" apply false

@@ -1,7 +1,7 @@
 package com.example.example_mod;
 
-import net.minecraft.resources.ResourceLocation;
 import com.example.example_mod.service.Services;
+import net.minecraft.resources.ResourceLocation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

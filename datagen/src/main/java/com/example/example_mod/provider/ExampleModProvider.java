@@ -1,5 +1,6 @@
 package com.example.example_mod.provider;
 
+import com.example.example_mod.CommonConstants;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.PackOutput;
@@ -12,7 +13,6 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
-import com.example.example_mod.CommonConstants;
 
 import java.util.concurrent.CompletableFuture;
 

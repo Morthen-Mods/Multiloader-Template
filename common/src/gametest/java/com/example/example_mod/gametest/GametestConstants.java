@@ -1,7 +1,7 @@
 package com.example.example_mod.gametest;
 
-import net.minecraft.gametest.framework.GameTestHelper;
 import com.example.example_mod.CommonConstants;
+import net.minecraft.gametest.framework.GameTestHelper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +12,8 @@ public class GametestConstants {
     public static final String MOD_ID = CommonConstants.MOD_ID + "_gametest";
     public static final String MOD_NAME = "Example Mod Gametest";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_NAME);
+    // Empty 3x3x3 structure from data/example_mod_gametest/structure/empty.nbt (1.21.4 has no built-in empty test structure)
+    public static final String EMPTY_STRUCTURE = MOD_ID + ":empty";
 
     public static void commonInit() {
 

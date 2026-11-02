@@ -1,38 +1,33 @@
 package com.example.example_mod.gametest;
 
-import net.minecraft.core.registries.Registries;
-import net.minecraft.data.DataProvider;
-import net.minecraft.gametest.framework.GameTestHelper;
-import net.minecraftforge.data.event.GatherDataEvent;
-import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraft.gametest.framework.GameTestGenerator;
+import net.minecraft.gametest.framework.TestFunction;
+import net.minecraftforge.event.RegisterGameTestsEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.registries.DeferredRegister;
-import com.example.example_mod.gametest.provider.GametestInstanceProvider;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
-import java.util.function.Consumer;
 
 @Mod(GametestConstants.MOD_ID)
 public class GametestMod {
-    public static final DeferredRegister<Consumer<GameTestHelper>> GAMETESTS = DeferredRegister.create(Registries.TEST_FUNCTION, GametestConstants.MOD_ID);
-    private static final List<String> testKeys = new ArrayList<>();
-
     public GametestMod(FMLJavaModLoadingContext context) {
         GametestConstants.LOGGER.info("Loading Gametest Mod");
-        GametestConstants.initTests(GametestMod::registerTest);
-        IEventBus modBus = context.getModEventBus();
-        modBus.addListener(GametestMod::gatherData);
-        GAMETESTS.register(modBus);
+        context.getModEventBus().addListener(GametestMod::registerTests);
     }
 
-    private static void registerTest(String name, Consumer<GameTestHelper> consumer) {
-        testKeys.add(name);
-        GAMETESTS.register(name, () -> consumer);
+    public static void registerTests(RegisterGameTestsEvent event) {
+        event.register(GametestMod.class);
     }
 
-    public static void gatherData(GatherDataEvent event) {
-        event.getGenerator().addProvider(true, (DataProvider.Factory<GametestInstanceProvider>) output -> new GametestInstanceProvider(output, testKeys));
+    // Forge drops tests whose batch name does not match forge.enabledGameTestNamespaces, so the batch is the mod id
+    @GameTestGenerator
+    public static Collection<TestFunction> generateTests() {
+        List<TestFunction> tests = new ArrayList<>();
+        GametestConstants.initTests((testId, consumer) -> tests.add(new TestFunction(
+                GametestConstants.MOD_ID, GametestConstants.MOD_ID + "." + testId, GametestConstants.EMPTY_STRUCTURE,
+                400, 50, true, consumer)));
+        return tests;
     }
 }
