@@ -16,4 +16,4 @@ plugins {
 
 rootProject.name = "Example-Mod"
 
-listOf("common", "datagen", "fabric", "forge", "neoforge").forEach(::include)
+listOf("common", "datagen", "fabric", "neoforge").forEach(::include)

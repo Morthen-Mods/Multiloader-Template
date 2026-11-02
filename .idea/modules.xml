@@ -45,10 +45,6 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.testmod.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/com.example.Example-Mod.forge.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/com.example.Example-Mod.forge.gametest.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/com.example.Example-Mod.forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/com.example.Example-Mod.forge.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/com.example.Example-Mod.forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/com.example.Example-Mod.forge.test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/com.example.Example-Mod.forge.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/com.example.Example-Mod.forge.testmod.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.testmod.iml" />
