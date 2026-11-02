@@ -5,8 +5,8 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.CachedOutput;
 import net.minecraft.data.DataProvider;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.Identifier;
 import com.example.example_mod.gametest.GametestConstants;
+import net.minecraft.resources.ResourceLocation;
 
 import java.util.Collection;
 import java.util.concurrent.CompletableFuture;
@@ -26,7 +26,7 @@ public class GametestInstanceProvider implements DataProvider {
                 this.testKeys.stream()
                         .map(name -> {
                             return DataProvider.saveStable(cache, buildTestInstance(name),
-                                    pathProvider.json(Identifier.fromNamespaceAndPath(GametestConstants.MOD_ID, name)));
+                                    pathProvider.json(ResourceLocation.fromNamespaceAndPath(GametestConstants.MOD_ID, name)));
                         })
                         .toArray(CompletableFuture[]::new)
         );

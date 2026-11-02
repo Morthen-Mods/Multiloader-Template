@@ -38,7 +38,9 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/com.example.Example-Mod.common.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/com.example.Example-Mod.common.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/com.example.Example-Mod.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/com.example.Example-Mod.common.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/com.example.Example-Mod.common.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/common/com.example.Example-Mod.common.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datagen/com.example.Example-Mod.datagen.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/datagen/com.example.Example-Mod.datagen.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/datagen/com.example.Example-Mod.datagen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/datagen/com.example.Example-Mod.datagen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datagen/com.example.Example-Mod.datagen.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/datagen/com.example.Example-Mod.datagen.testmod.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/com.example.Example-Mod.fabric.test.iml" />
@@ -50,6 +52,21 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/com.example.Example-Mod.neoforge.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.Example-Mod.common.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.Example-Mod.common.gametest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.Example-Mod.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.Example-Mod.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/common.Example-Mod.common.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/common/common.Example-Mod.common.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/datagen/datagen.Example-Mod.datagen.main.iml" filepath="$PROJECT_DIR$/.idea/modules/datagen/datagen.Example-Mod.datagen.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/fabric.Example-Mod.fabric.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/fabric.Example-Mod.fabric.gametest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/fabric.Example-Mod.fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/fabric.Example-Mod.fabric.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/fabric.Example-Mod.fabric.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/fabric.Example-Mod.fabric.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/fabric.Example-Mod.fabric.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/fabric.Example-Mod.fabric.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/forge.Example-Mod.forge.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/forge.Example-Mod.forge.gametest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/forge.Example-Mod.forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/forge.Example-Mod.forge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/forge.Example-Mod.forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/forge.Example-Mod.forge.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/forge.Example-Mod.forge.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/forge.Example-Mod.forge.testmod.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/neoforge.Example-Mod.neoforge.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/neoforge.Example-Mod.neoforge.gametest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/neoforge.Example-Mod.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/neoforge.Example-Mod.neoforge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/neoforge.Example-Mod.neoforge.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/neoforge.Example-Mod.neoforge.testmod.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.gametest.iml" filepath="$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.gametest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.testmod.iml" filepath="$PROJECT_DIR$/.idea/modules/common/net.morthen.Multiloader-Template.common.testmod.iml" />

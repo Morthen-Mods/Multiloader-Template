@@ -7,9 +7,8 @@ import net.minecraft.gametest.framework.FunctionGameTestInstance;
 import net.minecraft.gametest.framework.GameTestHelper;
 import net.minecraft.gametest.framework.TestData;
 import net.minecraft.gametest.framework.TestEnvironmentDefinition;
-import net.minecraft.resources.Identifier;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
-import com.example.example_mod.gametest.GametestConstants;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.event.RegisterGameTestsEvent;
@@ -31,13 +30,13 @@ public class GametestMod {
     }
 
     public static void registerTests(RegisterGameTestsEvent event) {
-        Holder<TestEnvironmentDefinition> env = event.registerEnvironment(Identifier.fromNamespaceAndPath(GametestConstants.MOD_ID, "default"));
+        Holder<TestEnvironmentDefinition> env = event.registerEnvironment(ResourceLocation.fromNamespaceAndPath(GametestConstants.MOD_ID, "default"));
 
         for (Map.Entry<String, ResourceKey<Consumer<GameTestHelper>>> entry : TEST_FUNCTION_MAP.entrySet()) {
             event.registerTest(
-                    Identifier.fromNamespaceAndPath(GametestConstants.MOD_ID, entry.getKey()),
+                    ResourceLocation.fromNamespaceAndPath(GametestConstants.MOD_ID, entry.getKey()),
                     new FunctionGameTestInstance(entry.getValue(),
-                            new TestData<>(env, Identifier.withDefaultNamespace("empty"), 100, 0, true)));
+                            new TestData<>(env, ResourceLocation.withDefaultNamespace("empty"), 100, 0, true)));
         }
     }
 

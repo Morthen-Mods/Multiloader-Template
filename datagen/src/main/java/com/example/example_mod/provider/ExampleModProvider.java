@@ -12,7 +12,6 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 import com.example.example_mod.CommonConstants;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
-import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -40,12 +39,12 @@ public class ExampleModProvider {
             }
 
             @Override
-            protected @NonNull RecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
+            protected RecipeProvider createRecipeProvider(HolderLookup.Provider provider, RecipeOutput recipeOutput) {
                 return new CustomRecipes(provider, recipeOutput);
             }
 
             @Override
-            public @NonNull String getName() {
+            public String getName() {
                 return "Example Mod Recipe Provider";
             }
         }
