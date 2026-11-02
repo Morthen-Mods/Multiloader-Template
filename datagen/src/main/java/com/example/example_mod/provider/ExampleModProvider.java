@@ -6,12 +6,13 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.tags.IntrinsicHolderTagsProvider;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
 import com.example.example_mod.CommonConstants;
-import net.neoforged.neoforge.common.data.ItemTagsProvider;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -50,9 +51,9 @@ public class ExampleModProvider {
         }
     }
 
-    public static class CustomItemTags extends ItemTagsProvider {
+    public static class CustomItemTags extends IntrinsicHolderTagsProvider<Item> {
         public CustomItemTags(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-            super(output, lookupProvider, CommonConstants.MOD_ID);
+            super(output, Registries.ITEM, lookupProvider, item -> item.builtInRegistryHolder().key(), CommonConstants.MOD_ID);
         }
 
         @Override
