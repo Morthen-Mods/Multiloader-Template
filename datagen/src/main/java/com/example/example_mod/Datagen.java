@@ -11,8 +11,8 @@ public class Datagen {
         eventBus.addListener(Datagen::gatherData);
     }
 
-    public static void gatherData(GatherDataEvent.Client event) {
-        event.createProvider(ExampleModProvider.CustomRecipes.Runner::new);
-        event.createProvider(ExampleModProvider.CustomItemTags::new);
+    public static void gatherData(GatherDataEvent event) {
+        event.createProvider(event.includeServer(), ExampleModProvider.CustomRecipes.Runner::new);
+        event.createProvider(event.includeServer(), ExampleModProvider.CustomItemTags::new);
     }
 }

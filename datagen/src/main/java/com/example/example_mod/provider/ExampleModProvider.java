@@ -13,6 +13,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Recipe;
+import net.neoforged.neoforge.common.data.ExistingFileHelper;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -52,8 +53,8 @@ public class ExampleModProvider {
     }
 
     public static class CustomItemTags extends IntrinsicHolderTagsProvider<Item> {
-        public CustomItemTags(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider) {
-            super(output, Registries.ITEM, lookupProvider, item -> item.builtInRegistryHolder().key(), CommonConstants.MOD_ID);
+        public CustomItemTags(PackOutput output, CompletableFuture<HolderLookup.Provider> lookupProvider, ExistingFileHelper existingFileHelper) {
+            super(output, Registries.ITEM, lookupProvider, item -> item.builtInRegistryHolder().key(), CommonConstants.MOD_ID, existingFileHelper);
         }
 
         @Override

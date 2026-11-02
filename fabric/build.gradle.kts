@@ -14,6 +14,6 @@ multiloader {
 
 afterEvaluate {
     dependencies {
-        "modImplementation"("com.terraformersmc:modmenu:13.0.4")
+        "modImplementation"("com.terraformersmc:modmenu:12.0.1")
     }
 }
