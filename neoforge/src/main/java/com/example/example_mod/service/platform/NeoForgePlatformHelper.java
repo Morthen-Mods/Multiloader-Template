@@ -8,7 +8,7 @@ import java.nio.file.Path;
 public class NeoForgePlatformHelper implements IPlatformHelper {
     @Override
     public Path getConfigDir() {
-        return FMLLoader.getCurrent().getGameDir();
+        return FMLLoader.getGamePath();
     }
 
     @Override
@@ -18,7 +18,7 @@ public class NeoForgePlatformHelper implements IPlatformHelper {
 
     @Override
     public boolean isDev() {
-        return !FMLLoader.getCurrent().isProduction();
+        return !FMLLoader.isProduction();
     }
 
     @Override
